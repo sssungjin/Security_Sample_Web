@@ -1,0 +1,96 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e6f2ff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 500px;
+  width: 100%;
+}
+
+.dashboard-container {
+  min-width: 400px;
+  max-width: 600px;
+  width: 100%;
+}
+
+h2 {
+  color: #4a90e2;
+  margin-bottom: 1.5rem;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: calc(100% - 20px);
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #357abd;
+}
+
+a {
+  color: #4a90e2;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.result-box {
+  background-color: #f0f8ff;
+  border: 1px solid #4a90e2;
+  border-radius: 4px;
+  padding: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.page-links {
+  text-align: left;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.page-links li {
+  margin-bottom: 0.5rem;
+}
+
+.submit-button {
+  margin-right: 10px;
+}
+
+.danger-button {
+  margin-left: 10px;
+  background-color: #ff4136;
+  color: white;
+}
+
+.danger-button:hover {
+  background-color: #ff7066;
+}
