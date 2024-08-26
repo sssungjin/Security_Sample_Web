@@ -29,6 +29,15 @@ const Dashboard = () => {
           <li>
             <Link to="/user">User Page</Link>
           </li>
+          <li>
+            <Link to="/upload">File Upload</Link>
+          </li>
+          <li>
+            <Link to="/jsonfileupload">JSON File Upload</Link>
+          </li>
+          <li>
+            <Link to="/total">Total Submit</Link>
+          </li>
         </ul>
       </nav>
       <button onClick={handleLogout}>Logout</button>

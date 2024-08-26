@@ -11,14 +11,6 @@ const PrivateRoute = ({ children, roles }) => {
     if (currentUser) {
       try {
         const decodedToken = jwtDecode(currentUser.token);
-        if (roles && !roles.includes(decodedToken.role)) {
-          alert(
-            `Access Denied: Your role is ${
-              decodedToken.role
-            }. Required role(s): ${roles.join(", ")}`
-          );
-          navigate("/dashboard");
-        }
       } catch (error) {
         console.error("Token decoding error:", error);
         AuthService.logout();
